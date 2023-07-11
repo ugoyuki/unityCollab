@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager i { get; private set; }
 
     public GameObject CharacterPrefab;
+    public GameObject ClearDialog;
+    public int EnemyCount { get; private set; } = 0;
 
     private void Awake()
     {
@@ -17,5 +19,19 @@ public class LevelManager : MonoBehaviour
     public void NextCharacter()
     {
         Instantiate(CharacterPrefab, transform.position, Quaternion.identity);
+    }
+
+    public void EnemyCountAdd()
+    {
+        EnemyCount++;
+    }
+
+    public void EnemyDie()
+    {
+        EnemyCount--;
+        if(EnemyCount == 0)
+        {
+            ClearDialog.SetActive(true);
+        }
     }
 }

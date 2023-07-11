@@ -7,7 +7,7 @@ public class Character : MonoBehaviour
     private Vector2 _StartPos;
 
     public float MaxPullDistance = 1f;
-    public float FlyForce = 10;
+    public float FlyForce = 20;
     private bool isFly = false;
     public GameObject DotPrefab;
     public float DotTimeInterval = .05f;
