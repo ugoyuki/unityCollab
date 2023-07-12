@@ -140,3 +140,4 @@ MonoBehaviour:
   FlyForce: 16
   DotPrefab: {fileID: 2831558869888835453, guid: 7be09b822c8604c0a90c5820c7cfecae, type: 3}
   DotTimeInterval: 0.05
+  isVisible: 0
