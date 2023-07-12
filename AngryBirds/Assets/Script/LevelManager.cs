@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class LevelManager : MonoBehaviour
 
     public GameObject CharacterPrefab;
     public GameObject ClearDialog;
+    //public GameObject ScoreDialog;
+    public Text scoreText;
     public int EnemyCount { get; private set; } = 0;
 
     private void Awake()
@@ -29,6 +32,7 @@ public class LevelManager : MonoBehaviour
     public void EnemyDie()
     {
         EnemyCount--;
+
         if(EnemyCount == 0)
         {
             ClearDialog.SetActive(true);

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-     private const float DIEVELOCITY = 5f;
+    private const float DIEVELOCITY = 5f;
+    public int score;
+    public GameObject scoreImage;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.relativeVelocity.sqrMagnitude > DIEVELOCITY)
         {
+            LevelManager.i.scoreText.text = (int.Parse(LevelManager.i.scoreText.text) + score).ToString();
+            Instantiate(scoreImage,transform.position, Quaternion.identity);
             Destroy(gameObject);
             LevelManager.i.EnemyDie();
         }
