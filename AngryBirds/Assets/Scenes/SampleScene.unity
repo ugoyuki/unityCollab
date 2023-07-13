@@ -990,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cc99cfcaae24f67b261619220f8a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterPrefab: {fileID: 1660436396290879773, guid: 32669ac598d6d459381c8e94e332280f, type: 3}
+  CharacterPrefab: {fileID: 113827680818527587, guid: 32669ac598d6d459381c8e94e332280f, type: 3}
   ClearDialog: {fileID: 1170308873}
   scoreText: {fileID: 1070791749}
 --- !u!4 &708704088
