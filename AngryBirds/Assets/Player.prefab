@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1660436396290879770}
   - component: {fileID: 1660436396290879769}
   - component: {fileID: 1660436396290879768}
+  - component: {fileID: 1989440356987529246}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,4 +141,28 @@ MonoBehaviour:
   FlyForce: 16
   DotPrefab: {fileID: 2831558869888835453, guid: 7be09b822c8604c0a90c5820c7cfecae, type: 3}
   DotTimeInterval: 0.05
+<<<<<<< HEAD
   isVisible: 0
+=======
+--- !u!95 &1989440356987529246
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660436396290879773}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8337fac52cc7e4242a06f1a93d4d2fd6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+>>>>>>> 7d1982cbe79b6a09845254c5bce40242656811d2
